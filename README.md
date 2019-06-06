@@ -40,12 +40,13 @@ go build -o backend .
 In order to run this backend you will need to setup the following environmental variables and save it to `.env`
 
 ```
-KEYCLOAK_URL=http://local-ip-of-keycloak:port
 CLIENT_ID=clientid
 CLIENT_SECRET=clientsecret
-REALM=realm
+KEYCLOAK_URL=http://local-ip-of-keycloak:port
+KEYCLOAK_REALM=realm
 KEYCLOAK_USER=user
 KEYCLOAK_PASSWORD=password
+KEYCLOAK_ATTRIBUTES_VALID_3PIDS="email,msisdn"
 ```
 > `KEYCLOAK_URL` - The address should be an IP/host name that provides a direct connection to Keycloak.
 
@@ -70,4 +71,3 @@ In order to be able to log in to your `matrix` homeserver using credentials stor
 # Known Issues
 - For now `Keycloak` usernames should comply with matrix username rules
 - Users can have up to two `email` addresses and one `msisdn` (Phone number) as 3PIDs
-- All the user attributes work as 3PIDs
