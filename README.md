@@ -1,4 +1,5 @@
-# Keycloak REST Identity store for mxisd
+# The mxisd project is no longer maintained and this project too.
+## Keycloak REST Identity store for mxisd
 
 This is a proof of concept of the [REST Identity store](https://github.com/kamax-matrix/mxisd/blob/master/docs/stores/rest.md) for Keycloak
 
